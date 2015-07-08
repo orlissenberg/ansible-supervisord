@@ -1,0 +1,6 @@
+---
+# tasks file for supervisord/
+
+- apt: name=supervisor state=present
+
+- service: name=supervisor state=restarted
